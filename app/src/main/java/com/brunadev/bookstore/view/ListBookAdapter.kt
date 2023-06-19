@@ -1,6 +1,5 @@
 package com.brunadev.bookstore.view
 
-import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,7 +8,8 @@ import com.brunadev.bookstore.R
 import com.brunadev.bookstore.data.Book
 import kotlinx.android.synthetic.main.book_item.view.*
 
-class ListBookAdapter(private val listProjects: List<Book>, val onClick: (Book) -> Unit) : RecyclerView.Adapter<ListBookAdapter.BookViewHolder>() {
+class ListBookAdapter(private val listProjects: List<Book>, val onClick: (Book) -> Unit) :
+    RecyclerView.Adapter<ListBookAdapter.BookViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BookViewHolder =
         BookViewHolder(

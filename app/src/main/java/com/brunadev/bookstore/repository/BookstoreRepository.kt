@@ -7,6 +7,6 @@ interface BookstoreRepository {
 
     fun getBooksAPIRX () : LiveData<GetAllBooks?>
     suspend fun getBooksAPICoroutines () : GetAllBooks
-    suspend fun findBook (book: String) : GetAllBooks
+    suspend fun seachBookAPI (book: String) : GetAllBooks
 
 }

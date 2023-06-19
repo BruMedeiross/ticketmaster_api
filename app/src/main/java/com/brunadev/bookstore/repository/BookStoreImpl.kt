@@ -17,7 +17,7 @@ class BookStoreImpl : BookstoreRepository {
     override suspend fun getBooksAPICoroutines(): GetAllBooks =
         remoteDataSource.bookListAPI()
 
-    override suspend fun findBook(book: String): GetAllBooks =
+    override suspend fun seachBookAPI(book: String): GetAllBooks =
         remoteDataSource.searchBook(book)
 
 
@@ -32,7 +32,7 @@ class BookStoreImpl : BookstoreRepository {
                 }
 
                 override fun onNext(response: GetAllBooks) {
-                    if (response.resultsList != null) {
+                    if (response.resultList != null) {
                         data.postValue(response)
                     } else {
                         data.postValue(null)

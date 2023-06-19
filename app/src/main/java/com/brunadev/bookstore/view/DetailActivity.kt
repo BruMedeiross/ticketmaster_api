@@ -36,7 +36,7 @@ class DetailActivity : AppCompatActivity() {
 
     private fun observeData() {
 
-        viewModel.bookDetail.observe(this@DetailActivity){
+        viewModel.bookDetail.observe(this@DetailActivity) {
             it?.let { setDetailData(it) }
         }
     }
@@ -44,9 +44,9 @@ class DetailActivity : AppCompatActivity() {
     private fun setDetailData(bookSelected: Book) {
 
         binding.bookTitle.text = bookSelected.title
-        binding.authorName.text = bookSelected.authors.map { it.name }.toString()
-        binding.authorBirth.text = bookSelected.authors.map { it.birthYear}.toString()
-        binding.authorDeath.text = bookSelected.authors.map { it.deathYear }.toString()
+        binding.authorName.text = bookSelected.authors.map { it?.name }.toString()
+        binding.authorBirth.text = bookSelected.authors.map { it?.birthYear }.toString()
+        binding.authorDeath.text = bookSelected.authors.map { it?.deathYear }.toString()
         binding.subjectText.text = bookSelected.subjects.firstOrNull().toString()
 
     }

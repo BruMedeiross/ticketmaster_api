@@ -25,6 +25,7 @@
                 android:id="@+id/search_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:queryHint="@string/search"
                 android:layout_margin="16dp">
 
             </androidx.appcompat.widget.SearchView>
@@ -104,6 +105,6 @@
             android:layout_gravity="end|bottom"
             android:layout_margin="16dp"
             android:src="@drawable/ic_book"
-            app:maxImageSize="30dp" />
+            app:maxImageSize="30dp"/>
     </FrameLayout>
 </layout>
