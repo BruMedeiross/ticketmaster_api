@@ -9,6 +9,7 @@ import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.brunadev.bookstore.data.Book
 import com.brunadev.bookstore.databinding.ActivityMainBinding
+import com.brunadev.bookstore.extension.hideKeyboard
 import com.brunadev.bookstore.viewmodel.MainViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -68,6 +69,7 @@ class MainActivity : AppCompatActivity() {
         viewModel.listState.observe(this@MainActivity) { bookList ->
             binding.shimmerList.startShimmer()
             binding.shimmerList.isShimmerVisible
+            hideKeyboard()
 
             if (bookList?.resultList?.isNotEmpty() == true) {
                 binding.shimmerList.visibility = View.GONE
