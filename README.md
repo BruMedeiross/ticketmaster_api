@@ -2,6 +2,7 @@
 
 TOOLS: 
 - Retrofit
+- ARCH: MVVM
 - LiveData and ViewModel 
 - Coroutines
 - Binding e dataBinding
