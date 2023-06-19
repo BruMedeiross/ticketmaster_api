@@ -1,7 +1,6 @@
-# BOOKSTOREApp 
+# ABOUT THIS PROJECT
 
-# TOOLS
-
+TOOLS: 
 - Retrofit
 - LiveData and ViewModel 
 - Coroutines
@@ -14,6 +13,5 @@
 https://gutendex.com/
 
 # Layout
-*referência
 
 ![Clean Modern App Portfolio Mockup Presentation (2)](https://github.com/BruMedeiross/BOOKSTORE/assets/62109684/da06d532-3645-423b-9923-e2e5bf85744b)
