@@ -3,9 +3,9 @@
 TOOLS: 
 - Retrofit
 - ARCH: MVVM
-- LiveData and ViewModel 
-- Coroutines
-- Binding e dataBinding
+- - DI: Koin
+- Arch Components: ViewModels, RxJava, Coroutines, DataBinding, LiveData
+- Material Design: RecyclerView, CardView, FloatingActionButton.
 - SearchView
 - Shimmer
 - TEST: JUnit and automated (Espresso + Roboeletric) 
