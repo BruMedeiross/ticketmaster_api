@@ -25,11 +25,6 @@ class ListBookAdapter(private val listProjects: List<Book>, val onClick: (Book) 
         holder.bind(listProjects[position])
     }
 
-    fun update() {
-        notifyDataSetChanged()
-    }
-
-
     inner class BookViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(list: Book) {
             with(itemView) {

@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        viewModel.init()
         setObservers()
 
         binding.viewModel = viewModel
@@ -41,6 +40,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setObservers() {
+
+        viewModel.init()
 
         viewModel.listState.observe(this@MainActivity) { bookList ->
             binding.shimmerList.startShimmer()

@@ -47,5 +47,7 @@ class DetailActivity : AppCompatActivity() {
         binding.authorName.text = bookSelected.authors.map { it.name }.toString()
         binding.authorBirth.text = bookSelected.authors.map { it.birthYear}.toString()
         binding.authorDeath.text = bookSelected.authors.map { it.deathYear }.toString()
+        binding.subjectText.text = bookSelected.subjects.firstOrNull().toString()
+
     }
 }

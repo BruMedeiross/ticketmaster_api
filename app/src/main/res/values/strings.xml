@@ -7,4 +7,9 @@
     <string name="author_name">JW Wells</string>
     <string name="not_found_text">Book Not Found</string>
     <string name="search">pesquisar</string>
+    <string name="subject">Drama</string>
+    <string name="author_death">01/01/1940</string>
+    <string name="author_birth">15/08/1900</string>
+    <string name="author_names">Name Name</string>
+    <string name="title_book">Title Book</string>
 </resources>
