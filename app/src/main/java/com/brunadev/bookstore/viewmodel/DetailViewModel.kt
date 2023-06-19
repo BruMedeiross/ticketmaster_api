@@ -4,7 +4,6 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.brunadev.bookstore.data.Book
-import com.brunadev.bookstore.data.BookDTO
 
 class DetailViewModel : ViewModel() {
 

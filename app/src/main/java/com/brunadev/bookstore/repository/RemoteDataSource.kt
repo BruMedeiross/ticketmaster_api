@@ -1,7 +1,6 @@
 package com.brunadev.bookstore.repository
 
 import com.brunadev.bookstore.commom.HttpClient
-import com.brunadev.bookstore.data.Book
 import com.brunadev.bookstore.data.GetAllBooks
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -14,6 +13,9 @@ class RemoteDataSource {
         .subscribeOn(Schedulers.io())
         .observeOn(AndroidSchedulers.mainThread())
 
-    suspend fun bookList2(): GetAllBooks = HttpClient.bookstoreApi
-        .getBookList2()
+    suspend fun bookListAPI(): GetAllBooks = HttpClient.bookstoreApi
+        .getBookListAPI()
+
+    suspend fun searchBook(data: String): GetAllBooks = HttpClient.bookstoreApi
+        .search(data)
 }

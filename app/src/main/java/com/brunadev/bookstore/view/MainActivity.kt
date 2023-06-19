@@ -1,15 +1,23 @@
 package com.brunadev.bookstore.view
 
+import android.app.SearchManager
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.widget.SearchView
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.brunadev.bookstore.R
 import com.brunadev.bookstore.data.Book
 import com.brunadev.bookstore.databinding.ActivityMainBinding
 import com.brunadev.bookstore.viewmodel.MainViewModel
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.toolbar.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : AppCompatActivity() {
@@ -37,6 +45,24 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "$listSize books available now", Toast.LENGTH_SHORT).show()
             }
         }
+
+        binding.searchView.apply {
+            setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+                override fun onQueryTextSubmit(query: String?): Boolean {
+                    return false
+                }
+
+                override fun onQueryTextChange(newText: String?): Boolean {
+                    newText?.let {
+                        if (it.length >= 5) {
+                            viewModel.searchBook(it)
+                        }
+                        return true
+                    }
+                    return false
+                }
+            })
+        }
     }
 
     private fun setObservers() {
@@ -51,12 +77,14 @@ class MainActivity : AppCompatActivity() {
                 binding.shimmerList.visibility = View.GONE
                 binding.shimmerList.stopShimmer()
                 rvlist.visibility = View.VISIBLE
-                showProjects(bookList.resultsList)
+                binding.txtNotFound.visibility = View.GONE
                 listSize = bookList.resultsList.size
-            }else{
+                showProjects(bookList.resultsList)
+            } else {
                 binding.shimmerList.visibility = View.GONE
                 binding.shimmerList.stopShimmer()
                 binding.txtNotFound.visibility = View.VISIBLE
+                rvlist.visibility = View.GONE
             }
         }
     }

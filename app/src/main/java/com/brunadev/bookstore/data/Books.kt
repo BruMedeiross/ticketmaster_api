@@ -28,14 +28,6 @@ data class Book(
     @SerializedName("download_count") val downloadCount: Int
 ) : Parcelable
 
-@Parcelize
-data class BookDTO(
-    var id: Int? = 0,
-    var title: String? = "",
-    var authors: String? = "",
-    val birthYear: String? = "",
-    val deathYear: String? = ""
-) : Parcelable
 
 @Parcelize
 data class Author(

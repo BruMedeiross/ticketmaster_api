@@ -19,6 +19,16 @@ class MainViewModel(private val repository: BookstoreRepository) : ViewModel(){
         }
     }
 
+    fun searchBook(book: String){
+
+        viewModelScope.launch {
+            val responseAPI = repository.findBook(book)
+            if (responseAPI != null) {
+                _listState.value = responseAPI
+            }
+        }
+    }
+
     fun getBookList() = repository.getBooksAPIRX()
 }
 

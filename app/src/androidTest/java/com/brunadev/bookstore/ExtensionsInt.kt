@@ -1,5 +1,8 @@
 package com.brunadev.bookstore
 
+import android.animation.Animator
+import android.animation.AnimatorListenerAdapter
+import android.app.Activity
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.ViewInteraction
 import androidx.test.espresso.action.ViewActions
@@ -49,6 +52,15 @@ fun Int.fastSwipeUp(): ViewInteraction = performAction(
         Press.PINPOINT
     )
 )
+
+
+fun Activity.animationEnd(callback: () -> Unit) : AnimatorListenerAdapter {
+    return object : AnimatorListenerAdapter() {
+        override fun onAnimationEnd(animation: Animator?) {
+            callback.invoke()
+        }
+    }
+}
 
 fun Int.slowSwipeUp(): ViewInteraction = performAction(
     this,

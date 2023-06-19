@@ -15,7 +15,11 @@ class BookStoreImpl : BookstoreRepository {
 
 
     override suspend fun getBooksAPICoroutines(): GetAllBooks =
-        remoteDataSource.bookList2()
+        remoteDataSource.bookListAPI()
+
+    override suspend fun findBook(book: String): GetAllBooks =
+        remoteDataSource.searchBook(book)
+
 
     override fun getBooksAPIRX(): LiveData<GetAllBooks?> {
         val data = MutableLiveData<GetAllBooks?>()
