@@ -2,7 +2,7 @@
 
 A simple HTTP Request & Response Service
 
-# TOOLS 
+# TOOLS AND RESOURCES
 
 - Retrofit
 - ARCH: MVVM
