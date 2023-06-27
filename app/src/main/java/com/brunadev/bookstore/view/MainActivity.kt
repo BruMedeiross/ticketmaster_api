@@ -27,12 +27,10 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        setObservers()
-
         binding.viewModel = viewModel
-
         rvlist.layoutManager = LinearLayoutManager(this@MainActivity)
 
+        setObservers()
 
         binding.fabDialog.setOnClickListener {
             if (listSize > 0) {
@@ -50,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                     newText?.let {
                         if (it.length >= 5) {
                             viewModel.searchBook(it)
-                        } else if(it.isEmpty()){
+                        } else if (it.isEmpty()) {
                             setObservers()
                         }
                         return true
@@ -59,7 +57,6 @@ class MainActivity : AppCompatActivity() {
                 }
             })
         }
-
     }
 
     private fun setObservers() {
@@ -67,6 +64,7 @@ class MainActivity : AppCompatActivity() {
         viewModel.init()
 
         viewModel.listState.observe(this@MainActivity) { bookList ->
+            rvlist.visibility = View.GONE
             binding.shimmerList.startShimmer()
             binding.shimmerList.isShimmerVisible
             hideKeyboard()
