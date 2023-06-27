@@ -1,6 +1,7 @@
 # ABOUT THIS PROJECT
+In the developed APP, a public API query was performed
 
-Tools and Resources 
+# TOOLS 
 
 - Retrofit
 - ARCH: MVVM
@@ -12,6 +13,7 @@ Tools and Resources
 - TEST: Unit (JUnit) and automated (Espresso + Roboeletric) 
 
 # API 
+
 A simple HTTP Request & Response Service
 https://gutendex.com/
 
