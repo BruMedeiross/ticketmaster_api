@@ -1,6 +1,7 @@
 # ABOUT THIS PROJECT
 
-TOOLS: 
+Tools and Resources 
+
 - Retrofit
 - ARCH: MVVM
 - DI: Koin
@@ -8,7 +9,7 @@ TOOLS:
 - Material Design: RecyclerView, CardView, FloatingActionButton.
 - SearchView
 - Shimmer
-- TEST: JUnit and automated (Espresso + Roboeletric) 
+- TEST: Unit (JUnit) and automated (Espresso + Roboeletric) 
 
 # API 
 https://gutendex.com/
