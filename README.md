@@ -1,5 +1,6 @@
 # ABOUT THIS PROJECT
-In the developed APP, a public API query was performed
+
+A simple HTTP Request & Response Service
 
 # TOOLS 
 
@@ -14,7 +15,6 @@ In the developed APP, a public API query was performed
 
 # API 
 
-A simple HTTP Request & Response Service
 https://gutendex.com/
 
 # Layout
