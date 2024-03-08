@@ -1,19 +1,33 @@
-# ABOUT THIS PROJECT
+# ticketmaster-Event
 
-Tools and Resources 
+The challenge is to create a simple Mobile app that exercises a REST-ful API.
+
+## App Features
+* Show list of events
+* A simple plain text search
 
 - Retrofit
 - ARCH: MVVM
 - DI: Koin
-- Arch Components: ViewModels, RxJava, Coroutines, DataBinding, LiveData
-- Material Design: RecyclerView, CardView, FloatingActionButton.
+- Arch Components: ViewModels, Coroutines, DataBinding, LiveData
+- Material Design: RecyclerView, CardView.
 - SearchView
 - Shimmer
-- TEST: Unit (JUnit) and automated (Espresso + Roboeletric) 
+- *TEST: Unit (JUnit) and automated (Espresso + Roboeletric)*
 
 # API 
-https://gutendex.com/
+[ticketmaster Api](https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2//)
 
-# Layout
+## Library Used
+* [Live Data](https://developer.android.com/topic/libraries/architecture/livedata)
+* [View Model](https://developer.android.com/topic/libraries/architecture/viewmodel)
+* [Kotlin Coroutines](https://developer.android.com/kotlin/coroutines)
+* [Retrofit](https://square.github.io/retrofit/)
+* [Picaso](https://square.github.io/picasso/)
+* [Material](https://material.io/develop/android)
+* [Recyclerview](https://developer.android.com/guide/topics/ui/layout/recyclerview)
 
-![Clean Modern App Portfolio Mockup Presentation (2)](https://github.com/BruMedeiross/BOOKSTORE/assets/62109684/da06d532-3645-423b-9923-e2e5bf85744b)
+
+**BRUNA MEDEIROS**
+* [GitHub](https://github.com/BruMedeiross)
+* [Linkedin](https://www.linkedin.com/in/bruna-medeiros-dos-santos/)

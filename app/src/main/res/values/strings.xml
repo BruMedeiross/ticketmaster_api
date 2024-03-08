@@ -1,15 +1,5 @@
 <resources>
-    <string name="app_name">BOOKSTORE</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="book_text">Romeo And Juliet</string>
-    <string name="item_name">Romeu And Me</string>
-    <string name="author_name">JW Wells</string>
-    <string name="not_found_text">Book Not Found</string>
+    <string name="app_name">TM EVENTS</string>
+    <string name="not_found_text">Event Not Found</string>
     <string name="search">Search</string>
-    <string name="subject">Drama</string>
-    <string name="author_death">01/01/1940</string>
-    <string name="author_birth">08/08/1900</string>
-    <string name="author_names">Name Name</string>
-    <string name="title_book">Title Book</string>
 </resources>

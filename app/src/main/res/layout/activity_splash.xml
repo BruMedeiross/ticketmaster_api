@@ -8,11 +8,11 @@
 
     <ImageView
         android:id="@+id/splash_img"
-        android:alpha="0"
-        tools:alpha="1"
-        android:layout_gravity="center"
-        android:src="@drawable/ic_book"
         android:layout_width="match_parent"
-        android:layout_height="200dp" />
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:scaleType="centerInside"
+        android:src="@mipmap/logo"
+        tools:alpha="1" />
 
 </FrameLayout>
