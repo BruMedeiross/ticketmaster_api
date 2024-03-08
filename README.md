@@ -2,6 +2,9 @@
 
 The challenge is to create a simple Mobile app that exercises a REST-ful API.
 
+![image](https://github.com/BruMedeiross/ticketmaster_api/assets/62109684/7cc09ed0-5515-445c-8b85-0c81972f33ff)
+
+
 ## App Features
 * Show list of events
 * A simple plain text search
@@ -14,6 +17,7 @@ The challenge is to create a simple Mobile app that exercises a REST-ful API.
 - SearchView
 - Shimmer
 - *TEST: Unit (JUnit) and automated (Espresso + Roboeletric)*
+
 
 # API 
 [ticketmaster Api](https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2//)
