@@ -9,6 +9,7 @@ The challenge is to create a simple Mobile app that exercises a REST-ful API.
 * Show list of events
 * A simple plain text search
 
+## APP 
 - Retrofit
 - ARCH: MVVM
 - DI: Koin
